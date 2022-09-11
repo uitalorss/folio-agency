@@ -1,0 +1,69 @@
+@import '../variables';
+
+
+.about-mobile{
+  background: $dark;
+  color: $light;
+  padding: 4rem 0;
+  .about-mobile__content{
+    padding: 0 2rem;
+  }
+  .about-mobile__identificator{
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+    .about-mobile__caption--number{
+      color: $text-secondary-300;
+    }
+  }
+
+  .about-mobile__title{
+    margin-bottom: 2rem;
+  }
+
+  .about-mobile__navigation{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    .about-mobile__navigation--directions{
+      padding: 1rem .875rem;
+      border-radius: 100px;
+      &:hover{
+        background: $primary;
+      }
+    }
+  }
+
+  .about-mobile__image{
+    width: 100%;
+    margin: 3.5rem 0;
+  }
+
+  .about-mobile__title-sector{
+    margin-bottom: 2.5rem;
+  }
+
+  .about-mobile__text{
+    color: $text-secondary-200;
+    margin-bottom: 2rem;
+  }
+
+  .about-mobile__button{
+    @include button-primary(10rem);
+  }
+
+  .about-mobile__counter{
+    margin-top: 3.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3.5625rem 3.75rem 4.75rem;
+    border-radius: 360px;
+    box-shadow: 0 4px 4px #00000050;
+    gap: .5rem;
+    .about-mobile__counter--count{
+      font-size: 140px;
+      font-weight: 600;
+    }
+  }
+}
