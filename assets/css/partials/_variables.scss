@@ -1,0 +1,18 @@
+//variáveis
+$active: #FFBC50;
+$primary: #5468E7;
+$secondary: #C897E4;
+$dark: #232340;
+$light: #ffffff;
+$allBlack: #000000;
+
+//mixins
+@mixin button-primary($witdh){
+  width: $witdh;
+  padding: 1rem 0;
+  background: $primary;
+  color: $light;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+}
