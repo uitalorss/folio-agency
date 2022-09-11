@@ -1,0 +1,48 @@
+.done-mobile{
+  padding: 4rem 0;
+  .done-mobile__content{
+    padding: 0 2rem;
+  }
+  .done-mobile__identificator{
+    color: $primary;
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .done-mobile__title{
+    margin-bottom: 2rem;
+  }
+
+  .done-mobile__navigation{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    .done-mobile__navigation--directions{
+      padding: 1rem .875rem;
+      border-radius: 100px;
+      &:hover{
+        background: $primary;
+      }
+    }
+  }
+
+  .done-mobile__list{
+    margin-top: 3.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    .done-mobile__list--item{
+      display: flex;
+      align-items: center;
+      gap: 1.875rem;
+      padding: 3rem;
+      border-radius: 32px;
+    }
+
+    .active{
+      background: $primary;
+      color: $light;
+    }
+  }
+}
