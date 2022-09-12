@@ -1,5 +1,6 @@
 .footer-mobile{
   margin-top: 4rem;
+  margin-bottom: 3.5rem;
   .footer-mobile__content{
     background-color: $primary;
     margin: 0 2rem;
@@ -14,6 +15,9 @@
     flex-direction: column;
     align-items: center;
     gap: 2.5rem;
+    img{
+      margin-left: 2.5rem;
+    }
     p{
       text-align: center;
     }
@@ -63,6 +67,7 @@
     display: flex;
     gap: .5rem;
     align-items: center;
+    padding: 0 2rem;
     img{
       padding: 1rem;
       border-radius: 100px;
