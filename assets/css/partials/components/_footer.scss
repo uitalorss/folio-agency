@@ -1,0 +1,62 @@
+.footer-mobile{
+  margin-top: 4rem;
+  .footer-mobile__content{
+    background-color: $primary;
+    margin: 0 2rem;
+    border-radius: 32px;
+    padding: 2rem 1.5rem;
+    color: $light;
+  }
+
+  .footer-mobile__presentation{
+    padding: 3rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+    p{
+      text-align: center;
+    }
+  }
+
+  .footer-mobile__call-to-action{
+    border-top: 1px solid #ffffff25;
+    padding-top: 2.5rem;
+    h5{
+      margin-bottom: 2.5rem;
+      text-align: center;
+    }
+
+    button{
+      padding: .75rem;
+      width: 100%;
+      background: $light;
+      color: $primary;
+      border: none;
+      outline: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+  }
+
+  .footer-mobile__info{
+    padding: 0 2rem;
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    p{
+      color: $text-secondary-300;
+      text-align: center;
+    }
+    select{
+      width: 100%;
+      padding: 1rem;
+      background: transparent;
+      border-radius: 8px;
+      border: none;
+    }
+  }
+}
