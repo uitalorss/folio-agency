@@ -59,4 +59,18 @@
       border: none;
     }
   }
+  .footer-mobile__icons{
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+    img{
+      padding: 1rem;
+      border-radius: 100px;
+      border: 1px solid $text-secondary-300;
+      &.special{
+        border: none;
+        background: $primary;
+      }
+    }
+  }
 }
