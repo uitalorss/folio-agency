@@ -6,6 +6,7 @@
 @import'./partials/components/call-to-action';
 @import './partials/components/jobs';
 @import './partials/components/footer';
+@import './partials/components/side-menu';
 
 //Configurações iniciais
 body, button{
@@ -38,6 +39,7 @@ h4{
 h5{
   font-size: 2rem;
   font-weight: 700;
+  line-height: 2.5rem;
 }
 
 h6{
