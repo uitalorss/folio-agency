@@ -1,7 +1,8 @@
-.done-mobile{
+.done-and-achievement-mobile{
   padding: 4rem 0;
   .done-mobile__content{
     padding: 0 2rem;
+    margin-bottom: 3.5rem;
   }
   .done-mobile__identificator{
     color: $primary;
@@ -43,6 +44,32 @@
     .active{
       background: $primary;
       color: $light;
+    }
+  }
+
+  //sessão de achievements
+  .achievement-mobile__content{
+    padding: 0 2rem;
+  }
+  .achievement-mobile__identificator{
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .achievement-mobile__title{
+    margin-bottom: 2rem;
+    width: 70%;
+  }
+
+  .achievement-mobile__counter{
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 0;
+    .achievement-mobile__counter--count{
+      color: $primary;
+      font-weight: 600;
+      font-size: 140px;
     }
   }
 }

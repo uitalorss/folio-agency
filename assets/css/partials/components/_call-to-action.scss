@@ -1,0 +1,31 @@
+.call-to-action-mobile{
+  margin-top: 3.5rem;
+  position: relative;
+  img{
+    width: 100%;
+  }
+  .call-to-action-mobile__info{
+    position: absolute;
+    top: 0;
+    color: $light;
+    padding-top: 4rem;
+    padding-left: 4.5rem;
+    .call-to-action-mobile__identificator{
+      padding-bottom: 1.5rem;
+    }
+    .call-to-action-mobile__title{
+      padding-bottom: 2rem;
+    }
+
+    .call-to-action-mobile__button{
+      padding: .75rem;
+      width: 144px;
+      background: $light;
+      color: $primary;
+      border: none;
+      outline: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+  }
+}
