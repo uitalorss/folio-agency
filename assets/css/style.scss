@@ -9,6 +9,10 @@
 @import './partials/components/side-menu';
 
 //Configurações iniciais
+html{
+  scroll-behavior: smooth;
+}
+
 body, button{
   font-family: 'Montserrat', sans-serif;
   font-size: 1rem;
