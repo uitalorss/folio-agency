@@ -98,3 +98,32 @@ h6{
   line-height: 1.125rem;
 }
 
+.nav-mobile{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 3.25rem 2rem 2.75rem;
+  .nav-mobile__botao{
+    border: none;
+    outline: none;
+    background: transparent;
+  }
+}
+.intro-mobile{
+  margin: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  .intro-mobile__button{
+    @include button-primary(10rem);
+  }
+  .intro-mobile__text{
+    max-width: 320px;
+  }
+}
+
+@media only screen and(min-width: 720px){
+  .nav-mobile{
+    display: none;
+  }
+}

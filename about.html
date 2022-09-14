@@ -10,11 +10,11 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./assets/css/reset.css">
   <link rel="stylesheet" href="./assets/css/style.css">
-  <title>Folio Agency</title>
+  <title>Folio Agency - About</title>
 </head>
 
 <body>
-  <header class="header-mobile">
+  <header>
     <nav class="nav-mobile">
       <img class="nav-mobile__logo" src="./assets/images/logos/logo-folio.svg" alt="logo folio agency">
       <button class="nav-mobile__botao"><img src="./assets/images/mobile/about/btn-menu.svg" alt=""></button>
@@ -44,59 +44,62 @@
         <img src="./assets/images/icons/icon-instagram-light.svg" alt="">
       </div>
     </nav>
-    <section class="intro-mobile">
-      <h3 class="intro-mobile__title">Stand Out<br />from The<br />Crowd.</h3>
-      <p class="intro-mobile__text text-body-2">Agency is a full-service agency, busy designing and building beautiful digital products, brands, and experiences.</p>
-      <button class="intro-mobile__button button">
-        Recent Work
-      </button>
-    </section>
-    <img src="./assets/images/mobile/about/image-header.svg" alt="" class="header-mobile__illustration">
   </header>
+  <section class="about-mobile" id="about">
+    <div class="about-mobile__content">
+      <div class="about-mobile__identificator">
+        <span class="about-mobile__caption--number caption1">01.</span>
+        <span class="about-mobile__caption--text caption1">Who We Are</span>
+      </div>
+      <h4 class="about-mobile__title">We Make Designs that Lead and <br /> Inpire.</h4>
+      <div class="about-mobile__navigation">
+        <span class="about-mobile__navigation--directions"><img src="assets/images/mobile/about/arrow-left-normal.svg" alt=""></span>
+        <span class="about-mobile__navigation--directions"><img src="assets/images/mobile/about/arrow-right-normal.svg" alt=""></span>
+      </div>
+    </div>
+    <img class="about-mobile__image" src="./assets/images/mobile/about/overview-about.svg" alt="">
+    <div class="about-mobile__content">
+      <h6 class="about-mobile__title-sector">A design team building a curated marketplace for UI designers.</h6>
+      <p class="about-mobile__text text-body-2">4,404 curated design resources to energize your creative workflow. We're a growing family of 334,531 designers and makers from around the world</p>
+      <button class="about-mobile__button button">Contact Us</button>
+      <div class="about-mobile__counter">
+        <span class="about-mobile__counter--count">
+          28
+        </span>
+        <span class="menuItem">Bigest Branding</span>
+      </div>
+    </div>
+  </section>
 
-  <header class="header-desktop">
-    <nav class="header-desktop__nav">
-      <img src="./assets/images/logos/logo-folio.svg" alt="">
-      <ul class="header-desktop__list">
-        <li class="header-desktop__list--item">
-          <a href="#about">
-            About
-          </a>
-        </li>
-        <li class="header-desktop__list--item">
-          <a href="#work">Work</a>
-        </li>
-        <li class="header-desktop__list--item">
-          <a href="#services">Services</a>
-        </li>
-        <li class="header-desktop__list--item">
-          <a href="#jobs">Jobs</a>
-        </li>
-      </ul>
-      <a class="header-desktop__button button" href="">Contact Us</a>
-    </nav>
-    <section class="intro-desktop">
-      <div class="intro-desktop__content">
-        <h3 class="intro-desktop__title">Stand Out<br />from The<br />Crowd.</h3>
-        <p class="intro-desktop__text text-body-2">Agency is a full-service agency, busy designing and building beautiful digital products, brands, and experiences.</p>
-        <a hfer="#" class="intro-desktop__button button">
-          Recent Work
-        </a>
-        <div class="down">
-          <a href=""><img src="./assets/images/icons/arrow-down.svg" alt="seta para próxima sessão"></a>
-          <span>Swipe down to explore</span>
+  <section class="about-desktop" id="about">
+    <div class="about-desktop__content">
+      <div class="about-desktop__identificator">
+        <span class="about-desktop__caption--number caption1">01.</span>
+        <span class="about-desktop__caption--text caption1">Who We Are</span>
+      </div>
+      <div class="about-desktop__title-and-nav">
+        <h4 class="about-desktop__title">We Make Designs that Lead and Inpire.</h4>
+        <div class="about-desktop__navigation">
+          <span class="about-desktop__navigation--directions"><img src="assets/images/mobile/about/arrow-left-normal.svg" alt=""></span>
+          <span class="about-desktop__navigation--directions"><img src="assets/images/mobile/about/arrow-right-normal.svg" alt=""></span>
         </div>
       </div>
-      <img src="./assets/images/desktop/image-header-desktop.svg" alt="" class="header-mobile__illustration">
-    </section>
-  </header>
-
-
-
-
-
-
-
+    </div>
+    <img class="about-desktop__image" src="./assets/images/desktop/overview-about.svg" alt="">
+    <div class="about-desktop__content-2">
+      <div class="about-desktop__details">
+        <h6 class="about-desktop__title-sector">A design team building a curated marketplace for UI designers.</h6>
+        <p class="about-desktop__text text-body-2">4,404 curated design resources to energize your creative workflow. We're a growing family of 334,531 designers and makers from around the world</p>
+        <button class="about-desktop__button button">Contact Us</button>
+      </div>
+      <div class="about-desktop__counter">
+        <span class="about-desktop__counter--count">
+          28
+        </span>
+        <span class="menuItem">Bigest Branding</span>
+      </div>
+    </div>
+  </section>
   <footer class="footer-mobile">
     <div class="footer-mobile__content">
       <div class="footer-mobile__presentation">
@@ -125,9 +128,7 @@
       </div>
       <p class="caption1">© 2020, UI8 LLC.</p>
     </div>
-
   </footer>
-  <script src="./assets/js/script.js"></script>
 </body>
 
 </html>
