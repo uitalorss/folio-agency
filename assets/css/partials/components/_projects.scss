@@ -60,3 +60,155 @@
     }
   }
 }
+
+// project-desktop
+.projects-desktop{
+  display: none;
+  .projects-desktop__content{
+    padding: 0 2rem;
+  }
+
+  .projects-desktop__title-and-nav{
+    display: flex;
+    align-items: flex-start;
+    .projects-desktop__info{
+      display: flex;
+      flex-direction: column;
+      p{
+        justify-self: center;
+        width: 50%;
+      }
+    }
+    .projects-desktop__title{
+      margin-bottom: 2rem;
+    }
+  
+    .projects-desktop__navigation{
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      .projects-desktop__navigation--directions{
+        padding: 1rem .875rem;
+        border-radius: 100px;
+        &:hover{
+          background: $primary;
+        }
+      }
+    }
+  }
+  .products-desktop__main-product{
+    margin: 5rem 0;
+    padding: 3rem 0;
+    display: flex;
+    position: relative;
+    .products-desktop__main-info{
+      width: 60%;
+      z-index: 100;
+      span{
+        display: inline-block;
+        padding: .5rem 1.5rem;
+        border-radius: 16px;
+        background: $shade-blue;
+        font-weight: 500;
+        color: $light;
+        margin-bottom: 1rem;
+      }
+
+      h5{
+        margin-bottom: 1.5rem;
+      }
+
+      p{
+        width: 70%;
+        color: $text-secondary-100;
+        line-height: 1.75rem;
+      }
+    }
+
+    .products-desktop__main-img{
+      position: absolute;
+      top: 0;
+      left: 300px;
+      padding: 2rem 4rem;
+      border-radius: 16px;
+      background: $shade-blue-200;
+    }
+  }
+
+  .projects-desktop__identificator{
+    color: $primary;
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .projects-desktop__title{
+    margin-bottom: 2rem;
+  }
+
+  .projects-desktop__list{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 0 2rem 4rem;
+    .visible{
+      margin-top: -12rem;
+    } 
+    h6{
+      margin-bottom: 2.5rem;
+    }
+    p{
+      margin-bottom: 1.5rem;
+    }
+
+    .btnAction{
+      cursor: pointer;
+      background: transparent;
+      border: none;
+      outline: none;
+      img{
+        padding: 1.125rem .875rem;
+        border: 2px solid #000000;
+        border-radius: 100px;
+      }
+    }
+    .item-image{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 16px;
+      margin-bottom: 1.5rem;
+      position: relative;
+      a{
+        position: absolute;
+        right: -20px;
+      }
+    }
+    .item-1{
+      background: $bg-orange-100;
+    }
+    .item-2{
+      background: $bg-pink;
+    }
+    .item-3{
+      background: $bg-yellow;
+    }
+    .item-4{
+      background: $bg-blue;
+    }
+    .item-5{
+      background: $bg-orange-200;
+    }
+  }
+}
+
+@media only screen and(min-width: 720px){
+  .projects-mobile{
+    display: none;
+  }
+
+  .projects-desktop{
+    display: block;
+  }
+}
