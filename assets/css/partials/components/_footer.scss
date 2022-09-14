@@ -79,3 +79,247 @@
     }
   }
 }
+
+@media only screen and (max-width: 320px){
+  .footer-mobile{
+    .footer-mobile__content{
+      margin: 0 1rem;
+    }
+
+    .footer-mobile__presentation{
+      padding: 1rem 0;
+      gap: 1.5rem;
+    }
+
+    .footer-mobile__call-to-action{
+      padding-top: 1.5rem;
+      h5{
+        font-size: 1.5rem;
+        font-weight: 700;
+        line-height: 1.5rem;
+        margin-bottom: 1.5rem;
+      }
+    }
+
+    .footer-mobile__info{
+      padding: 0 1rem;
+      margin-top: 3rem;
+    }
+  }
+}
+
+//footer desktop
+.footer-desktop{
+  display: none;
+  margin-top: 4rem;
+  margin-bottom: 3.5rem;
+  .footer-desktop__content{
+    background-color: $primary;
+    margin: 0 3rem;
+    border-radius: 29px;
+    padding: 2rem 1.5rem;
+    color: $light;
+  }
+
+  .footer-desktop__presentation{
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+    width: 60%;
+    margin: 5rem auto;
+    .footer-desktop__presentation--text{
+      font-size: 1.5rem;
+      font-weight: 700;
+      line-height: 2rem;
+    }
+    p{
+      text-align: center;
+    }
+  }
+
+  .footer-desktop__call-to-action{
+    border-top: 1px solid #ffffff25;
+    padding: 5rem 0 6rem 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    h5{
+      width: 60%;
+      margin: 0 auto;
+    }
+
+    button{
+      padding: .75rem;
+      width: 100%;
+      background: $light;
+      color: $primary;
+      border: none;
+      outline: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    .footer-desktop__details{
+      width: 70%;
+      margin: 0 auto;
+      .footer-desktop__details--illustration{
+        display: block;
+      }
+      span{
+        line-height: 2.5rem;
+        a{
+          margin-left: 1rem;
+          padding: 1rem .875rem;
+          border: 2px solid $light;
+          border-radius: 100px;
+        }
+      }
+
+    }
+  }
+
+  .footer-desktop__info{
+    padding: 0 2rem;
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    p{
+      color: $text-secondary-300;
+      text-align: center;
+      width: 50%;
+      font-weight: 600;
+    }
+    .footer-desktop__list{
+      display: flex;
+      gap: 3.5rem;
+      margin-bottom: 3.5rem;
+      a{
+        text-decoration: none;
+        font-size: 1rem;
+        font-weight: 600;
+        color: $text-secondary-200;
+        &:hover{
+          color: $primary;
+        }
+      }
+    }
+  }
+
+  .footer-desktop__ending{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-top: 1.5rem;
+    border-top: 1px solid #00000025;
+
+    p{
+      text-align: left;
+    }
+    .footer-desktop__icons{
+      display: flex;
+      gap: 1.5rem;
+      align-items: center;
+      span{
+        color: $primary;
+        font-weight: 600;
+      }
+      img{
+        &.special{
+          border: none;
+          background: $primary;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 720px){
+  .footer-mobile{
+    display: none;
+  }
+
+  .footer-desktop{
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 1280px){
+  .footer-desktop{
+    margin-top: 6rem;
+    margin-bottom: 3.5rem;
+    .footer-desktop__content{
+      background-color: $primary;
+      margin: 0 6rem;
+      border-radius: 40px;
+      padding: 8rem 5rem;
+      color: $light;
+    }
+  
+    .footer-desktop__presentation{
+      padding-bottom: 4rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2.5rem;
+      width: 60%;
+      margin: 5rem auto;
+      .footer-desktop__presentation--text{
+        font-size: 1.5rem;
+        font-weight: 700;
+        line-height: 2rem;
+        width: 50%;
+      }
+      p{
+        font-size: 2rem;
+        text-align: center;
+      }
+    }
+  
+    .footer-desktop__call-to-action{
+      border-top: 1px solid #ffffff25;
+      padding: 8rem 0 6rem 0;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      h5{
+        font-size: 4rem;
+        line-height: 4.5rem;
+        width: 60%;
+        margin: 0 auto;
+      }
+  
+      .footer-desktop__details{
+        width: 75%;
+        .footer-desktop__details--illustration{
+          display: block;
+          margin-bottom: 3rem ;
+        }
+        span{
+          font-size: 2rem;
+          font-weight: 700;
+          line-height: 3rem;
+          a{
+            font-size: 1.375rem;
+            padding: 1rem;
+          }
+        }
+  
+      }
+    }
+  
+    .footer-desktop__info{
+      gap: 3rem;
+      p{
+        width: 35%;
+        font-size: 1.125rem;
+      }
+      .footer-desktop__list{
+        gap: 3.5rem;
+      }
+    }
+  }
+}
