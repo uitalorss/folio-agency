@@ -88,6 +88,9 @@
     display: flex;
     gap: 1.5rem;
     margin-bottom: 1.5rem;
+    img{
+      margin-right: 6rem;
+    }
   }
 
   .done-desktop__title{
@@ -97,8 +100,11 @@
 
   .done-desktop__title-and-nav{
     display: flex;
+    justify-content: space-between;
     align-items: flex-start;
     .done-desktop__title{
+      margin-left: 8rem;
+      width: 60%;
       margin-bottom: 2rem;
     }
   
@@ -180,5 +186,54 @@
 
   .work-desktop{
     display: block;
+  }
+}
+
+@media only screen and(min-width: 1280px){
+  .work-desktop{
+    margin: 2rem 8rem;
+    .done-desktop__title-and-nav{
+      .done-desktop__title{
+        margin-left: 8rem;
+        font-size: 4rem;
+        line-height: 4.5rem;
+      }
+    }
+    .done-desktop__list{
+      margin-top: 3.5rem;
+      display: flex;
+      gap: .5rem;
+      .done-desktop__list--item{
+        height: 480px;
+        &:hover{
+          height: 480px*1.1;
+        }
+      }
+    }
+  }
+
+  .achievement-desktop{
+    display: flex;
+    img{
+      order: -1;
+    }
+  }
+
+  .achievement-desktop__content{
+    padding: 0 2rem;
+  }
+  .achievement-desktop__identificator{
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .achievement-desktop__title{
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+
+  .achievement-desktop__img{
+    margin-right: 6rem;
   }
 }

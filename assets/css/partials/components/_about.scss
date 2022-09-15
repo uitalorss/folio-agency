@@ -189,3 +189,13 @@
     display: block;
   }
 }
+
+@media only screen and(min-width: 1280px){
+  .about-desktop{
+    display: block;
+    .about-desktop__title-and-nav{
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
