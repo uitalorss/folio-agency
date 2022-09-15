@@ -67,11 +67,44 @@
 
 //about-desktop
 
+.header-desktop__nav-dark{
+  background: $dark;
+  padding: 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .header-desktop__list{
+    display: flex;
+    gap: 1rem;
+    a{
+      text-decoration: none;
+      font-size: 1rem;
+      font-weight: 500;
+      color: $text-secondary-300;
+      &:hover{
+        color: $primary;
+      }
+    }
+  }
+  .header-desktop__button{
+    width: 8rem;
+    padding: 1rem;
+    text-decoration: none;
+    font-weight: 500;
+    color: $light;
+    background: #323259;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 5px 10px #00000025;
+  }
+}
+
 .about-desktop{
   display: none;
   background: $dark;
   color: $light;
   padding: 6rem 2.5rem;
+
   .about-desktop__content{
     padding: 0;
   }

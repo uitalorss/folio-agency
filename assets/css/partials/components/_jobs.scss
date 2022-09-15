@@ -2,6 +2,7 @@
   .jobs-mobile__content{
     padding: 0 2rem;
   }
+
   .jobs-mobile__identificator{
     color: $primary;
     display: flex;
@@ -9,6 +10,7 @@
     margin-bottom: 1.5rem;
   }
 
+  
   .jobs-mobile__title{
     margin-bottom: 2rem;
   }
@@ -19,6 +21,7 @@
     gap: 1rem;
     margin-top: 3rem;
     .jobs-mobile__list--item{
+      position: relative;
       display: flex;
       flex-direction: column;
       align-items: flex-start;
@@ -27,13 +30,124 @@
       padding: 3rem 2rem;
       border-radius: 24px;
       box-shadow: 0 4px 4px #00000025;
-      button{
+      a{
         padding: .5rem;
         background: transparent;
         border: none;
         outline: none;
         cursor: pointer;
       }
+      .example-job{
+        position: absolute;
+        visibility: hidden;
+        right: 0;
+      }
+      transition: background-color .3s ease-in-out;
+      &:hover{
+        background: $dark;
+        h6, p{
+          color: $light;
+        }
+        .example-job{
+          visibility: visible;
+        }
+      }
     }
+  }
+}
+
+//jobs-desktop
+
+.jobs-desktop{
+  display: none;
+  .jobs-desktop__content{
+    padding: 0 2rem;
+  }
+  .jobs-desktop__identificator{
+    color: $primary;
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .jobs-desktop__info{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    .jobs-desktop__data{
+      div{
+        display: flex;
+        align-items: center;
+        margin-top: 3rem;
+        a{  
+          display: inline-block;
+          padding: 1rem;
+          background: $accent;
+          border-radius: 100px;
+        }
+        span{
+          display: inline-block;
+          width: 30%;
+          margin-left: 1rem;
+          line-height: 1.5rem;
+          font-weight: 500;
+          color: $text-secondary-200;
+        }
+      }
+
+    }
+  }
+  .jobs-desktop__title{
+    margin-bottom: 2.5rem;
+  }
+
+  .jobs-desktop__list{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 3rem;
+    .jobs-desktop__list--item{
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      gap: 1rem;
+      padding: 3rem 2rem;
+      border-radius: 24px;
+      box-shadow: 0 4px 4px #00000025;
+      a{
+        padding: .5rem;
+        background: transparent;
+        border: none;
+        outline: none;
+        cursor: pointer;
+      }
+      .example-job{
+        position: absolute;
+        visibility: hidden;
+        right: 0;
+      }
+      transition: background-color .3s ease-in-out;
+      &:hover{
+        background: $dark;
+        h6, p{
+          color: $light;
+        }
+        .example-job{
+          visibility: visible;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and(min-width: 720px){
+  .jobs-mobile{
+    display: none;
+  }
+
+  .jobs-desktop{
+    display: block;
   }
 }

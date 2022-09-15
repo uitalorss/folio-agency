@@ -13,6 +13,20 @@
     margin-bottom: 2rem;
   }
 
+  .projects-mobile__navigation{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+    .done-mobile__navigation--directions{
+      padding: 1rem .875rem;
+      border-radius: 100px;
+      &:hover{
+        background: $primary;
+      }
+    }
+  }
+
   .projects-mobile__list{
     display: flex;
     flex-direction: column;
@@ -24,6 +38,8 @@
     p{
       margin-bottom: 1.5rem;
     }
+
+
 
     .btnAction{
       cursor: pointer;

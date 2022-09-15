@@ -1,6 +1,4 @@
-.call-to-action-mobile{
-  margin-top: 3.5rem;
-  margin-bottom: 3.5rem;
+.call-to-action-mobile{  
   position: relative;
   img{
     width: 100%;
@@ -28,5 +26,52 @@
       border-radius: 8px;
       cursor: pointer;
     }
+  }
+}
+
+.call-to-action-desktop{
+  display: none;
+
+  margin: 2rem;
+  margin-top: 3.5rem;
+  margin-bottom: 3.5rem;
+  position: relative;
+  img{
+    width: 100%;
+  }
+  .call-to-action-desktop__info{
+    position: absolute;
+    top: 0;
+    left:280px;
+    color: $light;
+    padding-top: 4rem;
+    padding-left: 4.5rem;
+    .call-to-action-desktop__identificator{
+      padding-bottom: 1.5rem;
+    }
+    .call-to-action-desktop__title{
+      padding-bottom: 2rem;
+    }
+
+    .call-to-action-desktop__button{
+      padding: .75rem;
+      width: 144px;
+      background: $light;
+      color: $primary;
+      border: none;
+      outline: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+  }
+}
+
+@media only screen and(min-width: 720px){
+  .call-to-action-mobile{
+    display: none;
+  }
+
+  .call-to-action-desktop{
+    display: block;
   }
 }
