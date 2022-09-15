@@ -91,5 +91,16 @@
     .img-desktop{
       display: block;
     }
+
+    .call-to-action-desktop__info{
+      margin-left: 15rem;
+      .call-to-action-desktop__title{
+        font-size: 4rem;
+        line-height: 4.5rem;
+        width: 60%;
+        margin-bottom: 3.25rem;
+      }
+
+    }
   }
 }

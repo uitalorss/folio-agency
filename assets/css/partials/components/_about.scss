@@ -115,16 +115,24 @@
     .about-desktop__caption--number{
       color: $text-secondary-300;
     }
+    img{
+      margin-right: 3rem;
+    }
   }
   .about-desktop__title-and-nav{
     display: flex;
     align-items: flex-start;
+    margin-left: 6rem;
+    gap: 2rem;
     .about-desktop__title{
+      font-size: 3rem;
+      line-height: 3.5rem;
       margin-bottom: 2rem;
     }
   
     .about-desktop__navigation{
       display: flex;
+      justify-content: space-between;
       align-items: center;
       gap: 1rem;
       .about-desktop__navigation--directions{
@@ -137,7 +145,10 @@
     }
   }
 
-  
+  .about-desktop__overview{
+      display: grid;
+      grid-template-columns: 1fr 6fr;
+  }
 
   .about-desktop__image{
     width: 100%;
@@ -193,9 +204,19 @@
 @media only screen and(min-width: 1280px){
   .about-desktop{
     display: block;
+    padding: 2rem 8rem;
+    .about-desktop__identificator{
+      img{
+        margin-right: 6rem;
+      }
+    }
     .about-desktop__title-and-nav{
-      display: flex;
-      justify-content: space-between;
+      margin-left: 8rem;
+      .about-desktop__title{
+        font-size: 4rem;
+        line-height: 4.5rem;
+      }
+      
     }
   }
 }
