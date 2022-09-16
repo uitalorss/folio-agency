@@ -159,6 +159,20 @@
     }
   }
 }
+@media only screen and(max-width: 320px){
+  .jobs-mobile{
+    .jobs-mobile__list{
+      .jobs-mobile__list--item{
+        &:hover{
+          .example-job{
+            visibility: hidden;
+          }
+        }
+          
+      }
+    }
+  }
+}
 
 @media only screen and(min-width: 720px){
   .jobs-mobile{
@@ -172,6 +186,7 @@
 
 @media only screen and(min-width: 1280px){
   .jobs-desktop{
+    margin: 2rem 8rem;
     .jobs-desktop__identificator{
       img{
         margin-right: 6rem;

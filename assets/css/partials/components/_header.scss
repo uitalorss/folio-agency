@@ -122,6 +122,29 @@
   }
 }
 
+@media only screen and(max-width: 320px){
+  .header-mobile{
+    .intro-mobile{
+      gap: 1rem;
+      .intro-mobile__title{
+        font-size: 2rem;
+        font-weight: 700;
+        line-height: 2.5rem;
+      }
+      .intro-mobile__text{
+        font-size: .875rem;
+        font-weight: 400;
+        line-height: 1.25rem;
+      }
+    }
+
+    .header-mobile__illustration{
+      margin-top: -5rem;
+    }
+  }
+}
+
+
 @media only screen and(min-width: 720px){
   .header-mobile{
     display: none;
@@ -142,6 +165,15 @@
         gap: 3.5rem;
       }
     }
+
+    .header-desktop__nav-dark{
+      justify-content: space-between;
+      padding: 2.5rem 4rem;
+      .header-desktop__list{
+        gap: 3.5rem;
+      }
+    }
+
 
     .intro-desktop{
       margin: 2rem 8rem;

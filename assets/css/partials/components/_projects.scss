@@ -229,6 +229,44 @@
   }
 }
 
+@media only screen and(max-width: 320px){
+  .projects-mobile{
+    .projects-mobile__title{
+      font-size: 2rem;
+      line-height: 2.5rem;
+    }
+
+    .projects-mobile__text{
+      font-size: .875rem;
+      line-height: 1rem;
+    }
+
+    .projects-mobile__list{
+      .projects-mobile__list--item{
+        h6{
+          font-size: 1.25rem;
+        }
+
+        p{
+          font-size: .875rem;
+          line-height: 1rem;
+        }
+
+        .btnAction{
+            font-size: .875rem;
+            padding: .875rem;
+        }
+        .item-image{
+           img{
+            width: 70%;
+           }
+        }
+      }
+    }
+  }
+}
+
+
 @media only screen and(min-width: 720px){
   .projects-mobile{
     display: none;

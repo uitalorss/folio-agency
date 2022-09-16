@@ -191,6 +191,31 @@
   }
 }
 
+@media only screen and(max-width: 320px){
+.about-mobile{
+  .about-mobile__title{
+    font-size: 2rem;
+    line-height: 2.5rem;
+    margin-bottom: 1.5rem;
+  }  
+  .about-mobile__image{
+    margin: 2.5rem 0;
+  }
+
+  .about-mobile__counter{
+    padding: 2rem 3rem;
+    .about-mobile__counter--count{
+      font-size: 120px;
+    }
+    .menuItem{
+      font-size: .75rem;
+    }
+  }
+
+}
+
+}
+
 @media only screen and(min-width: 720px){
   .about-mobile{
     display: none;
@@ -198,6 +223,12 @@
 
   .about-desktop{
     display: block;
+    .about-desktop__button{
+      a{
+        text-decoration: none;
+        color: $light;
+      }
+    }
   }
 }
 
@@ -217,6 +248,11 @@
         line-height: 4.5rem;
       }
       
+    }
+
+    .about-desktop__details{
+      margin: 0 auto;
+      width: 50%;
     }
   }
 }

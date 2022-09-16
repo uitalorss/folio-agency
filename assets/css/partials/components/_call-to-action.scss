@@ -17,7 +17,7 @@
     }
 
     .call-to-action-mobile__button{
-      padding: .75rem;
+      padding: .75rem 1rem;
       width: 144px;
       background: $light;
       color: $primary;
@@ -25,6 +25,7 @@
       outline: none;
       border-radius: 8px;
       cursor: pointer;
+      text-decoration: none;
     }
   }
 }
@@ -69,6 +70,20 @@
     }
   }
 }
+
+@media only screen and(max-width: 320px){
+  .call-to-action-mobile{
+    .call-to-action-mobile__info{
+      padding-left: 2.5rem;
+    .call-to-action-mobile__title{
+      font-size: 1.5rem;
+      font-weight: 700;
+      line-height: 2.5rem;
+    }
+  }
+}
+}
+
 
 @media only screen and(min-width: 720px){
   .call-to-action-mobile{
